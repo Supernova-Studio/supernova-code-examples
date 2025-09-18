@@ -1,0 +1,53 @@
+.storybook-button {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  border-radius: 3em;
+  font-weight: 700;
+  line-height: 1;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.storybook-button--primary {
+  background-color: var(--btn-primary-bg, #555ab9);
+  color: var(--btn-primary-fg, white);
+}
+.storybook-button--secondary {
+  box-shadow: var(--btn-secondary-border, rgba(0, 0, 0, 0.15)) 0px 0px 0px 1px inset;
+  background-color: transparent;
+  color: var(--btn-secondary-fg, #333);
+}
+.storybook-button--small {
+  padding: 10px 16px;
+  font-size: 12px;
+}
+.storybook-button--medium {
+  padding: 11px 20px;
+  font-size: 14px;
+}
+.storybook-button--large {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+/* Light theme variables by default */
+:root,
+[data-theme="light"] {
+  --btn-primary-bg: #555ab9;
+  --btn-primary-fg: #ffffff;
+  --btn-secondary-fg: #333333;
+  --btn-secondary-border: rgba(204, 132, 255, 0.763);
+  --sb-bg: #ffffff;
+  --sb-fg: #111111;
+  --sb-border: #cccccc;
+}
+
+/* Dark theme overrides */
+[data-theme="dark"] {
+  --btn-primary-bg: #c5caff;
+  --btn-primary-fg: #101021;
+  --btn-secondary-fg: #e9e8fe;
+  --btn-secondary-border: rgba(175, 106, 255, 0.622);
+  --sb-bg: #1d1f27;
+  --sb-fg: #f5f5f5;
+  --sb-border: #3a3d48;
+}

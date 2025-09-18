@@ -1,0 +1,46 @@
+/* Global Storybook UI theme overrides */
+
+/* Light theme (default) */
+:root,
+[data-theme="light"] {
+  --sb-canvas-bg: #ffffff;
+}
+
+/* Dark theme overrides */
+[data-theme="dark"] {
+  --sb-canvas-bg: #1d1f27;
+}
+
+/* Ensure the Canvas iframe body follows the theme */
+body {
+  background-color: var(--sb-canvas-bg) !important;
+}
+
+/* Dark theme for Storybook canvas */
+[data-theme="dark"] .sb-canvas,
+[data-theme="dark"] .sb-show-main .sb-main-padded,
+[data-theme="dark"] .sb-main,
+[data-theme="dark"] .sb-main-padded,
+[data-theme="dark"] .sb-show-main,
+[data-theme="dark"] .os-host,
+[data-theme="dark"] .os-content,
+[data-theme="dark"] .sb-story,
+[data-theme="dark"] .sb-story > div,
+[data-theme="dark"] .sb-story > div > div {
+  background-color: var(--sb-canvas-bg) !important;
+}
+
+/* Toggle button styling */
+.theme-toggle-button {
+  position: fixed !important;
+  left: 8px !important;
+  bottom: 8px !important;
+  z-index: 9999 !important;
+  padding: 6px 10px !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--sb-border, #ccc) !important;
+  background: var(--sb-bg, #fff) !important;
+  color: var(--sb-fg, #111) !important;
+  cursor: pointer !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2) !important;
+}

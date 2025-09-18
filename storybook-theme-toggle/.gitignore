@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+build/
+dist/
+out/
+
+# Storybook
+storybook-static/
+.cache/
+.storybook-cache/
+
+# Testing
+coverage/
+
+# Tooling caches
+.eslintcache
+*.tsbuildinfo
+
+# IDE/editor
+.vscode/
+.idea/
